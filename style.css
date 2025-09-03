@@ -1,0 +1,14 @@
+
+* {
+  font-family: "Nata Sans", sans-serif;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+}
+
+button {
+    background-color: green;
+}

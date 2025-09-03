@@ -1,0 +1,5 @@
+Fornat is SYMBOL (LIGATURE) = LAYER NAME
+
+Ꜳ (AA) = Points
+
+Ꜵ (AO) = Reincarnation, Each reincarnation gives 1 Ꜳ per click
