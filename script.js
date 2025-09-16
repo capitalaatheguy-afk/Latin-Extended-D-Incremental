@@ -5,6 +5,7 @@ var reincarnation = 0;
 var pps2 = 0
 var rps = 0;
 var pps3 = 1;
+var energy = 0;
 
 function points1() {
     points += ppc + reincarnation + 1
@@ -60,6 +61,27 @@ function points8() {
     }
 }
 
+function points9() {
+    if (points >= 1_000_000_000_000_000) {
+        points = points - 1_000_000_000_000_000
+        pps += 10_000_000 * pps3
+    }
+}
+
+function points10() {
+    if (points >= 1_000_000_000_000_000_000) {
+        points = points - 1_000_000_000_000_000_000
+        pps += 300_000_000 * pps3
+    }
+}
+
+function points11() {
+    if (points >= 1_000_000_000_000_000_000_000) {
+        points = points - 1_000_000_000_000_000_000_000
+        pps += 8_000_000_000 * pps3
+    }
+}
+
 function reincarnation1() {
     if (points >= 15_000_000) {
         points = points - 15_000_000 // Uses "_" for numbers to make large numbers readable
@@ -95,14 +117,52 @@ function reincarnation5() {
     }
 }
 
+function reincarnation6() {
+    if (reincarnation >= 25_000) {
+        reincarnation -= 25_000
+        rps += 10
+    }
+}
+
+function reincarnation7() {
+    if (reincarnation >= 1_000_000) {
+        reincarnation -= 1_000_000
+        pps2 += 4
+    }
+}
+
+function reincarnation8() {
+    if (reincarnation >= 5_000_000) {
+        reincarnation -= 5_000_000
+        rps += 2000
+    }
+}
+
+function reincarnation9() {
+    if (reincarnation >= 100_000_000) {
+        reincarnation -= 100_000_000
+        pps2 += 100
+    }
+}
+
 function reincarnationReset() {
     points = 0;
     pps = 0;
     reincarnation++
 }
+
+function energyReset() {
+    points = 0;
+    pps = 0;
+    reincarnation = 0;
+    energy = 0;
+}
+
 setInterval(() => {
-    document.querySelector(".points").innerHTML = Math.floor(points); document.querySelector(".reincarnation").innerHTML = Math.floor(reincarnation);
-    points += pps
+    document.querySelector(".points").innerHTML = Math.floor(points); 
+document.querySelector(".reincarnation").innerHTML = Math.floor(reincarnation);
+document.querySelector(".energy").innerHTML = Math.floor(energy);
+    points += pps * (energy ** 2)
     pps3 += pps2
     reincarnation += rps
 }, 10);
