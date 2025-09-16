@@ -1,5 +1,9 @@
-Fornat is SYMBOL (LIGATURE) = LAYER NAME
+The format is SYMBOL (LIGATURE) = LAYER NAME
 
 Ꜳ (AA) = Points
 
-Ꜵ (AO) = Reincarnation, Each reincarnation gives 1 Ꜳ per click
+Ꜵ (AO) = Reincarnation/Rebirth. Each reincarnation gives 1 Ꜳ per click
+
+Ꜷ (AU) = Energy. Each energy = PPS * (Energy^2), costs 15 sextillion.
+
+Next after Energy, is Infinity value (= 1.8x10^308), or Dark Energy (I'll choose AV for costing 10^10^115 points)
