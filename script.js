@@ -155,7 +155,7 @@ function energyReset() {
     points = 0;
     pps = 0;
     reincarnation = 0;
-    energy = 0;
+    energy++;
 }
 
 setInterval(() => {
